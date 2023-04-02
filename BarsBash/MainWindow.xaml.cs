@@ -12,7 +12,7 @@ namespace BarsBash
     /// </summary>
     public partial class MainWindow : Window
     {
-        private const string defaultWindowTitle = "BarsBash v0.1 / BGM.bars patcher for MK8DX";
+        private const string defaultWindowTitle = "BarsBash v0.1.1 / BGM.bars patcher for MK8DX";
         private const string waitingWindowTitle = "Please wait...";
         private bool askUserForOverwrite = false;
         private Bars targetBars = null;

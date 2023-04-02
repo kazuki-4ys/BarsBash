@@ -262,7 +262,7 @@ namespace BfstpTool
                 for (uint i = 0; i < daInfos.Length; i++)
                 {
                     Utils.Utils.ushortToBytes(dest, i * 8 + 4, 0x4102, isLE);
-                    Utils.Utils.uintToBytes(dest, i * 8 + 8, 0x14, isLE);
+                    Utils.Utils.uintToBytes(dest, i * 8 + 8, 4 + 8 * (uint)daInfos.Length, isLE);
                 }
                 Utils.Utils.uintToBytes(dest, 4 + (uint)daInfos.Length * 8, 0, isLE);
                 Utils.Utils.uintToBytes(dest, 4 + (uint)daInfos.Length * 8 + 4, 0xFFFFFFFF, isLE);
